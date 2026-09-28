@@ -1,0 +1,54 @@
+{
+  "config": {
+    "flow_title": "{name}",
+    "step": {
+      "user": {
+        "title": "Dragon Claw agent",
+        "description": "Connect to a PC running the Dragon Claw agent. Agents on your network are also discovered automatically.",
+        "data": {
+          "host": "Host",
+          "port": "Port",
+          "name": "Name",
+          "mac": "MAC address (for Wake-on-LAN)"
+        }
+      },
+      "zeroconf_confirm": {
+        "title": "Discovered Dragon Claw agent",
+        "description": "Add {name} ({host})? Enter its MAC address to be able to turn it on via Wake-on-LAN.",
+        "data": {
+          "mac": "MAC address (for Wake-on-LAN)"
+        }
+      },
+      "reconfigure": {
+        "data": {
+          "mac": "MAC address (for Wake-on-LAN)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the Dragon Claw agent.",
+      "invalid_mac": "Invalid MAC address."
+    },
+    "abort": {
+      "already_configured": "This PC is already configured.",
+      "no_ipv4": "The agent did not advertise an IPv4 address.",
+      "reconfigure_successful": "Reconfiguration successful."
+    }
+  },
+  "entity": {
+    "switch": {
+      "power": { "name": "Power" }
+    },
+    "button": {
+      "wake": { "name": "Wake" },
+      "power_off": { "name": "Power off" },
+      "reboot": { "name": "Reboot" },
+      "reboot_to_firmware": { "name": "Reboot to firmware" },
+      "lock": { "name": "Lock" },
+      "log_out": { "name": "Log out" },
+      "suspend": { "name": "Suspend" },
+      "hibernate": { "name": "Hibernate" },
+      "hybrid_suspend": { "name": "Hybrid suspend" }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "domain": "dragon_claw",
+  "name": "Dragon Claw",
+  "codeowners": ["@craftycram"],
+  "config_flow": true,
+  "documentation": "https://github.com/craftycram/dragon-claw-ha",
+  "issue_tracker": "https://github.com/craftycram/dragon-claw-ha/issues",
+  "iot_class": "local_polling",
+  "requirements": ["grpcio>=1.59.0"],
+  "version": "0.1.0",
+  "zeroconf": ["_dragon-claw._tcp.local."]
+}
