@@ -18,3 +18,5 @@ Enter the PC's MAC address when you add it. If Home Assistant has seen the PC re
 WoL has to be turned on in the PC's BIOS/UEFI and on its network adapter. The magic packet goes to `255.255.255.255:9`, so Home Assistant needs to be on the same L2 network as the PC.
 
 > The agent has no authentication. Anyone on your LAN can already do what this integration does.
+
+Icon from [Janrupf/dragon-claw](https://github.com/Janrupf/dragon-claw), MIT License, © 2023 Janrupf.
